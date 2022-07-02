@@ -485,7 +485,7 @@ header nav ul li a:active {
   text-decoration: none;
 }
 
-#overlay:target {
+#overlay.visible {
   opacity: 1;
   pointer-events: auto;
 }

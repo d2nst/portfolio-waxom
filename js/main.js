@@ -87,6 +87,8 @@ $(window).resize(function () {
   }
 });
 
+// serviceitem animation
+
 const $service = $('.services');
 const $serviceItem = $('.service_item');
 const $serviceHeight = $service.offset().top - 600;
@@ -99,4 +101,21 @@ $(window).scroll(function () {
       $serviceItem.css('opacity', 1);
     }
   });
+});
+
+// video overlay
+const videoIcon = document.querySelector('.video .icon');
+const overlay = document.querySelector('#overlay');
+const videoClose = document.querySelector('.close');
+
+videoIcon.addEventListener('click', (e) => {
+  e.preventDefault();
+  overlay.classList.add('visible');
+});
+videoClose.addEventListener('click', (e) => {
+  e.preventDefault();
+  overlay.classList.remove('visible');
+});
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('visible');
 });
