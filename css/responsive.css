@@ -242,7 +242,12 @@
   .counters ul li h4 {
     font-size: 2vw;
   }
-
+  #overlay .inner {
+    width: 90%;
+  }
+  #overlay .inner iframe {
+    width: 100%;
+  }
   .footer_top .container {
     display: flex;
     flex-direction: column;
